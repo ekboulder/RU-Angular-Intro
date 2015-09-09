@@ -1,0 +1,27 @@
+* {
+	box-sizing: border-box;
+}
+
+
+.box {
+	width: 50%;
+	border: solid 1px green;
+	margin: auto;
+	overflow: hidden;
+	padding: 20px;
+}
+.column1 {
+	float: left;
+}
+
+.column2 {
+	float: right;
+}
+
+.paragraph1:hover {
+	color: pink;
+}
+
+.paragraph2 {
+
+}
