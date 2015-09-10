@@ -18,10 +18,36 @@
 	float: right;
 }
 
-.paragraph1:hover {
-	color: pink;
+.paragraph1 {
+	color: red;
 }
 
 .paragraph2 {
+	color: peachpuff;
+}
 
+.largeButton {
+	width: 50%;
+	margin: auto;
+	padding: 10vw;
+	height: 100px;
+	background-color: peachpuff;
+	text-align: center;
+
+}
+
+.smallButton {
+	float:right;
+}
+
+.popup {
+	position: fixed;
+	top: 10vw;
+	bottom: 10vw;
+	left: 20vw;
+	right: 20vw;
+	width: 60vw;
+	height: 80vh;
+	margin: auto;
+	background-color:rgba(192,192,192,0.5);
 }

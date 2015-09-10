@@ -16,8 +16,29 @@ var mainControllerFunc = function ($scope) {
 
 	$scope.headingText = 'This is a heading'
 	$scope.headerHoverHandler = function () {
-		$scope.headingText += '!' 
+		$scope.headingText += '!!!' 
 	}
+
+	$scope.paragraphClass = 'paragraph1'
+	$scope.paragraphHoverHandler = function () {
+		$scope.paragraphClass = 'paragraph2'
+	}
+
+	$scope.linkVisibility = true
+	$scope.linkEventHandler = function (event) {
+		if ( !confirm('Are you sure want to navigate to google') ) {
+			event.preventDefault()
+			$scope.linkVisibility = !$scope.linkVisibility
+		}
+	}
+
+	$scope.popupVisibility = false
+	$scope.buttonEventHandler = function () {
+		$scope.popupVisibility = !$scope.popupVisibility
+	}
+
+
+
 }
 
 //Registering the controller: mainController
